@@ -14,7 +14,7 @@ by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmit
     * [example](/engineering/fft_example.py)
 
 <p align="left">
-  <img src="engineering/fft_example_plot.png" width="350" title="FFT example">
+  <img src="engineering/fft_example_plot.png" width="400" title="FFT example">
 </p>
 
 
