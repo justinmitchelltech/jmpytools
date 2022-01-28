@@ -2,7 +2,10 @@ from matplotlib import style
 import matplotlib.pyplot as plt 
 import numpy as np 
 from fft import use_scipy_fft
+import os
 
+
+os.chdir("pytools/engineering")
 
 # Create and plot a signal to test FFT with --------------- \
 
@@ -28,3 +31,4 @@ ax[1].set_xlabel("Frequency [Hz]")
 ax[1].set_title("FFT of Signal, Frequency Domain")
 
 plt.show()
+fig.savefig("fft_example_plot.png")
