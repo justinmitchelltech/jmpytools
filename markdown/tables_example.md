@@ -1,6 +1,6 @@
 
 ### Table from .csv
-| Unnamed: 0 | Monday | Tuesday | Wednesday | Thursday | Friday | 
+| Week | Monday | Tuesday | Wednesday | Thursday | Friday | 
 | :--- | :----: | :----: | :----: | :----: | ---: |
 | Week 1 | 8.09 | 6.95 | 3.02 | 1.68 | 9.29 | 
 | Week 2 | 1.74 | 8.52 | 8.93 | 9.17 | 3.47 | 
@@ -9,7 +9,7 @@
 | Week 5 | 4.19 | 9.37 | 5.9 | 5.78 | 5.65 | 
 
 ### Appended Table
-| Unnamed: 0 | Week 1 | Week 2 | Week 3 | Week 4 | Week 5 | 
+| Month | Week 1 | Week 2 | Week 3 | Week 4 | Week 5 | 
 | :--- | :----: | :----: | :----: | :----: | ---: |
 | January | 39.49 | 93.79 | 25.75 | 66.41 | 88.41 | 
 | February | 47.53 | 29.73 | 13.03 | 62.68 | 42.96 | 
