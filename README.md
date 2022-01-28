@@ -14,3 +14,4 @@ by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmit
 ## [Markdown Tools](/markdown)
 
 * [Tables from csv's or Pandas DataFrames](/markdown/tables.py)
+    * [example](/markdown/tables_example.py) > [output](/markdown/tables_example.md)

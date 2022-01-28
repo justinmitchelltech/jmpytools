@@ -23,7 +23,7 @@ def df_to_md(df, output_md, mode='w', caption=' '):
 
     # Create caption 
     if caption != ' ':
-        f.write("### " + caption + "\n")
+        f.write("\n### " + caption + "\n")
 
     # Create header
     f.write('| ')
