@@ -18,6 +18,15 @@ by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmit
 </p>
 
 
+## [Statistical Tools](/statistics)
+* [Normal Distributions](/statiscs/normal.py)
+  * [example](/statistics/normal_examples.py)
+
+<p align="left">
+  <img src="statistics/normal_examples_plot_fit.png" width="350" title="fitted normal distribution">
+</p>
+
+
 ## [Markdown Tools](/markdown)
 
 * [Tables from csv's or Pandas DataFrames](/markdown/tables.py)
