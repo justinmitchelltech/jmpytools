@@ -19,7 +19,7 @@ by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmit
 
 
 ## [Statistical Tools](/statistics)
-* [Normal Distributions](/statiscs/normal.py)
+* [Normal Distributions](/statistics/normal.py)
   * [example](/statistics/normal_examples.py)
 
 <p align="left">
