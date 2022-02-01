@@ -49,7 +49,7 @@ def fit_normal(
         plt.plot([mu+3*std, mu+3*std], [0, max(pdf)], 'r--')
 
         plt.legend()
-        title_str = "$\mu$ = " + f'{mu:.2f}' + ", $\sigma$ = " + f'{std:.2f}'
+        title_str = "$\mu$ = " + f'{mu:.3f}' + ", $\sigma$ = " + f'{std:.3f}'
         plt.title(title_str)
         if save_as != " ":
             plt.savefig(save_as)
