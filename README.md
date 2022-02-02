@@ -7,7 +7,7 @@ by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmit
 
 # Contents
 
-
+<!------------------------------------------------------------------------------------------------->
 ## [Engineering Tools](/engineering)
 
 * [Fast Fourier Transform (FFT)](/engineering/fft.py)
@@ -18,7 +18,16 @@ by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmit
 </p>
 
 
+<!------------------------------------------------------------------------------------------------->
 ## [Statistical Tools](/statistics)
+
+* [Linear Regressions w/ Confidence Intervals](/statistics/linear.py)
+  * [example](/statistics/linear_example.py)
+
+<p align="left">
+  <img src="statistics/linear_example_plot_fit.png" width="400" title="fitted normal distribution">
+</p>  
+
 * [Normal Distributions](/statistics/normal.py)
   * [example](/statistics/normal_examples.py)
 
@@ -27,6 +36,7 @@ by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmit
 </p>
 
 
+<!------------------------------------------------------------------------------------------------->
 ## [Markdown Tools](/markdown)
 
 * [Tables from csv's or Pandas DataFrames](/markdown/tables.py)
