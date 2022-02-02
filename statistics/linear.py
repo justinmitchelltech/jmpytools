@@ -13,6 +13,7 @@ class fit_linear:
     y: dependent variable data
     confidence: desired percentage statistical confidence interval (default is 95%)
     
+
     attributes
     -----------------------------------
     x: independent variable data
@@ -20,18 +21,21 @@ class fit_linear:
     confidence: desired percentage statistical confidence interval (default is 95%)
     slope: slope
     intercept: intercept
+    rsq: R-squared value
     slope_error: +/- error of slope 
     intercept_error: +/- error of intercept 
-    reg: regression object returned by scipy.stats.linregress()
+    reg: regression object as returned by scipy.stats.linregress()
+
 
     methods
     -----------------------------------
-    plot(): Plots data and regression with confidence intervals
-    -------
-    plot: set to True to generate plot (default is False)
-    fig_handl: figure handle - if figure already exists
-    ax_handl: axes handle - if axes already exist
-    save_as: name to save plot as (e.g. "plotName.png")
+
+        plot(): Plots data and regression with confidence interval
+        -------
+        save_as (optional): name to save plot as (e.g. "plotName.png")
+        fig_handl (optional): figure handle - if figure already exists
+        ax_handl (optional): axes handle - if axes already exist
+        
 
     additional info / resources
     -----------------------------------
@@ -51,25 +55,30 @@ class fit_linear:
 
         self.slope = self.reg.slope
         self.intercept = self.reg.intercept
-        
+        self.rsq = self.reg.rvalue**2
+
+        # Two-sided inverse Students t-distribution
+        # p - probability, df - degrees of freedom
         tinv = lambda p, df: abs(stats.t.ppf(p/2, df))  # Function to get t-score
-        ts = tinv((1-(confidence/100)), len(x)-2)  # Use ^ to get t-score
+
+        ts = tinv((1-(confidence/100)), len(x)-2)  # Use above to get t-score for input data
 
         self.slope_error = ts*self.reg.stderr
         self.intercept_error = ts*self.reg.intercept_stderr
 
         
     def plot(self, 
-            fig_handl=None, ax_handl=None, save_as=None):
+            save_as=None,
+            fig_handl=None, ax_handl=None):
 
-        line_label = f'y = {self.reg.slope:.3f}x + {self.reg.intercept:.3f}'
-        r_squared_label = f"$R^2$: {self.reg.rvalue**2:.2f}"
-        slope_stats = f"slope ({self.confidence:.1f}%): {self.reg.slope:.3f} $\pm$ {self.slope_error:.4f}"
-        intercept_stats = f"intercept ({self.confidence:.1f}%): {self.reg.intercept:.3f} $\pm$ {self.intercept_error:.4f}"  
+        line_label = f'y = {self.slope:.3f}x + {self.intercept:.3f}'
+        r_squared_label = f"$R^2$: {self.rsq:.2f}"
+        slope_stats = f"slope ({self.confidence:.1f}%): {self.slope:.3f} $\pm$ {self.slope_error:.4f}"
+        intercept_stats = f"intercept ({self.confidence:.1f}%): {self.intercept:.3f} $\pm$ {self.intercept_error:.4f}"  
         stats_label = line_label + "\n" + r_squared_label + "\n" + slope_stats + "\n" + intercept_stats
 
         xx = np.linspace(min(self.x), max(self.x), 100)
-        yy = self.reg.intercept + self.reg.slope*xx
+        yy = self.intercept + self.slope*xx
         yy_upper = yy + self.intercept_error
         yy_lower = yy - self.intercept_error
 
@@ -94,4 +103,3 @@ class fit_linear:
 
         if ax_handl == None:
             plt.show()
-
