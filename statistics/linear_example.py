@@ -17,7 +17,7 @@ fit_object.plot()
 # Another way to plot and save ------------------\
 
 # Create matplotlib figure
-fig, ax = plt.subplots(figsize=(11, 7.5))
+fig, ax = plt.subplots(figsize=(11, 7.5), dpi=200)
 
 # Use plot() method
 fit_object.plot(fig_handl=fig, ax_handl=ax, save_as="linear_example_plot_fit.png")
