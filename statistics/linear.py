@@ -89,8 +89,8 @@ class fit_linear:
 
         ax_handl.scatter(self.x, self.y, marker='o', facecolor='g', edgecolor='b', alpha=0.5, label="data")
         ax_handl.plot(xx, yy, 'k-', linewidth=1, label="\nlinear fit: "+stats_label)
-        ax_handl.plot(xx, yy_upper, 'r--', linewidth=1, label=f'{self.confidence:.1f}% confidence interval')
-        ax_handl.plot(xx, yy_lower, 'r--', linewidth=1)
+        # ax_handl.plot(xx, yy_upper, 'r--', linewidth=1, label=f'{self.confidence:.1f}% confidence interval')
+        # ax_handl.plot(xx, yy_lower, 'r--', linewidth=1)
         ax_handl.set_xlabel('x')
         ax_handl.set_ylabel('y')
         ax_handl.legend()
