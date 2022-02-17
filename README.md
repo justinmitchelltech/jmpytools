@@ -1,4 +1,4 @@
-# My Python Tools for Engineers
+# Python Tools for Engineers
 
 My Python tools for engineers - especially hardware engineers involved with R&D and experimentation
 
