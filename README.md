@@ -1,6 +1,6 @@
-# pytools 
+# Python Tools for Engineers
 
-by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmitchelltech/pytools) 
+by Justin @ [github.com/justinmitchelltech/pytools](https://github.com/justinmitchelltech/pytools-for-enginerds) 
 
 <br>
 
