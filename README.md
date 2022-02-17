@@ -21,7 +21,7 @@ by Justin @ [github.com/justinmitchelltech/pytools-for-enginerds](https://github
 <!------------------------------------------------------------------------------------------------->
 ## [Statistical Tools](/statistics)
 
-* [Linear Regressions w/ Confidence Intervals](/statistics/linear.py)
+* [Linear Regressions](/statistics/linear.py)
   * [example](/statistics/linear_example.py)
 
 <p align="left">
