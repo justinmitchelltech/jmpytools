@@ -1,6 +1,6 @@
 # My Python Tools for Engineers
 
-by Justin @ [github.com/justinmitchelltech/jmpytools](github.com/justinmitchelltech/jmpytools) 
+by Justin @ [github.com/justinmitchelltech/jmpytools](https://github.com/justinmitchelltech/jmpytools) 
 
 <br>
 
