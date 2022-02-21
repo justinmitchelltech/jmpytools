@@ -39,6 +39,15 @@ by Justin @ [github.com/justinmitchelltech/jmpytools](https://github.com/justinm
 
 
 <!------------------------------------------------------------------------------------------------->
+## [Debugging Tools](/debugging)
+
+* [Loading Bar](/debugging/loading.py)
+    * [example:](/debugging/loading_examples.py) [==================================================] (100.0 %)
+
+</p>
+
+
+<!------------------------------------------------------------------------------------------------->
 ## [Markdown Tools](/markdown)
 
 * [Tables from csv's or Pandas DataFrames](/markdown/tables.py)
