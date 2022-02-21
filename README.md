@@ -42,7 +42,7 @@ by Justin @ [github.com/justinmitchelltech/jmpytools](https://github.com/justinm
 ## [Debugging Tools](/debugging)
 
 * [Loading Bar](/debugging/loading.py)
-    * [example:](/debugging/loading_examples.py) [==================================================] (100.0 %)
+    * [example](/debugging/loading_examples.py)
 
 </p>
 
