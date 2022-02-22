@@ -14,6 +14,10 @@ by Justin @ [github.com/justinmitchelltech/jmpytools](https://github.com/justinm
 
 [Loading Bar](/genpurpose/loading.py) (including usage [examples](/genpurpose/loading_examples.py))
 
+<p align="left">
+  <img src="analysis/loading_example-gif.gif" width="450" title="FFT example">
+</p>
+
 [Markdown tables from csv's or Pandas DataFrames](/genpurpose/mdtables.py) (including usage [examples](/genpurpose/mdtables_examples.py) + [output](/genpurpose/mdtables_examples.md) example) 
 
 <br>
@@ -31,7 +35,7 @@ by Justin @ [github.com/justinmitchelltech/jmpytools](https://github.com/justinm
 [Linear Regressions](/analysis/linear.py) (including usage [examples](/analysis/linear_examples.py))
 
 <p align="left">
-  <img src="analysis/linear_example-plot.png" width="350" title="fitted normal distribution">
+  <img src="analysis/linear_example-plot.png" width="350" title="linear fit example">
 </p>  
 
 [Normal Distributions](/analysis/normal.py) (including usage [examples](/analysis/normal_examples.py))
