@@ -4,8 +4,8 @@ import os
 from linear import fit_linear
 
 
-os.chdir("pytools/statistics")
-data = pd.read_csv("linear_data_example.csv")
+os.chdir("jmpytools/analysis")
+data = pd.read_csv("linear_example-data.csv")
 
 # Use fit_linear class
 fit_object = fit_linear(data['x'], data['y'], confidence=99.9)
@@ -20,7 +20,7 @@ fit_object.plot()
 fig, ax = plt.subplots(figsize=(11, 7.5), dpi=200)
 
 # Use plot() method
-fit_object.plot(fig_handl=fig, ax_handl=ax, save_as="linear_example_plot_fit.png")
+fit_object.plot(fig_handl=fig, ax_handl=ax, save_as="linear_example-plot.png")
 
 # Show matplotlib figure 
 plt.show()
