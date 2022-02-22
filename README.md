@@ -4,6 +4,19 @@ My Python tools for engineers - especially those involved in R&D and experimenta
 
 by Justin @ [github.com/justinmitchelltech/jmpytools](https://github.com/justinmitchelltech/jmpytools) 
 
+## Usage
+
+Either paste this repo in your project OR somewhere where it's accesible using the Python import statements.
+
+Access the entire package like so:
+```
+import jmpytools
+```
+Or access a specific function from a subpackage like so:
+```
+from jmpytools.genpurpose.loading import print_loading_bar
+```
+
 <br>
 
 
