@@ -14,9 +14,7 @@ by Justin @ [github.com/justinmitchelltech/jmpytools](https://github.com/justinm
 
 [Loading Bar](/genpurpose/loading.py) (including usage [examples](/genpurpose/loading_examples.py))
 
-<p align="left">
-  <img src="genpurpose/loading_example-gif.gif" width="450" title="FFT example">
-</p>
+![](genpurpose/loading_example-gif.gif)
 
 [Markdown tables from csv's or Pandas DataFrames](/genpurpose/mdtables.py) (including usage [examples](/genpurpose/mdtables_examples.py) + [output](/genpurpose/mdtables_examples.md) example) 
 
