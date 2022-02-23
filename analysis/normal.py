@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def fit_normal(    
         np_array_of_data, 
-        plot=False, save_as=" ", bins=25):
+        plot=False, show_plot=True, save_as=" ", bins=25):
 
     """
     
@@ -36,7 +36,7 @@ def fit_normal(
         plt.hist(np_array_of_data, bins=bins, density=True, alpha=0.3, label="data")
         xmin, xmax = plt.xlim()
         
-        xx = np.linspace(xmin, xmax, 100)
+        xx = np.linspace(xmin, xmax, 1000)
         pdf = norm.pdf(xx, mu, std)
         plt.plot(xx, pdf, 'k-', linewidth=2, label="normal fit")
 
@@ -53,6 +53,7 @@ def fit_normal(
         plt.title(title_str)
         if save_as != " ":
             plt.savefig(save_as)
-        plt.show()
+        if show_plot:
+            plt.show()
         
     return mu, std
